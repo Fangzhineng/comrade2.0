@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色-->
+    <color name="text_1f1f1f">#1f1f1f</color><!--黑色-->
+    <color name="text_write">#ffffff</color><!--白色-->
+    <color name="text_read_color">#d32019</color> <!--红色-->
+    <color name="text_break_color">#262626</color> <!--黑色-->
+    <color name="text_999">#999999</color> <!--灰色-->
+    <color name="text_ccc">#cccccc</color>
+    <color name="text_e2">#e2e2e2</color> <!--浅灰-->
+    <color name="text_333">#333333</color>  <!--深灰-->
+    <color name="text_2c2d2e">#2c2d2e</color>  <!--深灰-->
+    <color name="text_96">#969696</color>  <!--深灰-->
+    <color name="text_green_color">#008706</color>
+    <color name="dialog_title_color">#7a8fbb</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="text_4c9cea">#4c9cea</color>
+
+
+    <!--分割线颜色 -->
+    <color name="colorViewLine">#f2f2f2</color>
+    <color name="colorTextHint">#cccccc</color>
+    <color name="colorTextAssist">#000000</color>
+    <color name="calender_bg_color">#11262626</color> <!--透明灰-->
+
+    <!--button颜色 -->
+    <color name="button_read_r21">#ec4039</color>
+    <color name="button_gray_r21">#e5e5e5</color>
+
+
+
+
+</resources>

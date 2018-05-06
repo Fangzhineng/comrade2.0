@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.ccpunion.comrade.login.LoginActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/act_title" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_69"
+            android:src="@mipmap/pic_logo" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="@dimen/dp_87">
+
+            <ImageView
+                android:id="@+id/iv_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_login_number" />
+
+            <EditText
+                android:id="@+id/phone_et"
+                style="@style/EditTextMBaseStyle"
+                android:layout_marginLeft="@dimen/dp_11"
+                android:layout_marginRight="@dimen/dp_11"
+                android:layout_toLeftOf="@+id/phone_cancel"
+                android:layout_toRightOf="@+id/iv_p"
+                android:hint="@string/input_phoneNumber"
+                android:inputType="number"
+                android:maxEms="1"
+                android:maxLength="11" />
+
+            <ImageView
+                android:id="@+id/phone_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="@{click.onClick}"
+                android:src="@mipmap/icon_login_delete"
+                android:visibility="gone" />
+
+            <View
+                style="@style/ViewHWeight"
+                android:layout_below="@+id/iv_p"
+                android:layout_marginTop="9dp"></View>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="@dimen/dp_37">
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_login_password" />
+
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/EditTextMBaseStyle"
+                android:layout_marginLeft="@dimen/dp_11"
+                android:layout_marginRight="@dimen/dp_11"
+                android:layout_toRightOf="@+id/iv_password"
+                android:layout_toLeftOf="@+id/right"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:maxEms="1"
+                android:maxLength="11" />
+
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/password_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_11"
+                    android:layout_toLeftOf="@+id/look_password"
+                    android:onClick="@{click.onClick}"
+                    android:src="@mipmap/icon_login_delete" />
+
+                <ImageView
+                    android:id="@+id/look_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{click.onClick}"
+                    android:src="@mipmap/icon_login_eye_close" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                style="@style/ViewHWeight"
+                android:layout_below="@+id/iv_password"
+                android:layout_marginTop="9dp"></View>
+
+
+            <TextView
+                android:id="@+id/forget_password"
+                style="@style/TextViewBaseMain12"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="21dp"
+                android:onClick="@{click.onClick}"
+                android:text="忘记密码?"
+                android:textColor="@color/text_4c9cea" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/GrayButtonRadius21dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="49dp"
+            android:onClick="@{click.onClick}"
+            android:text="登录" />
+    </LinearLayout>
+</layout>

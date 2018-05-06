@@ -1,0 +1,166 @@
+<resources>
+
+
+    <!--启动页背景-->
+    <style name="WelcomeStyle" parent="@style/AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@mipmap/icon_splash</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/text_1f1f1f</item>
+        <item name="colorPrimaryDark">@color/text_1f1f1f</item>
+        <item name="colorAccent">@color/colorTextAssist</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+
+    </style>
+
+    <!--dialog样式-->
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+
+    <style name="RequestLoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- 14sp 白字-->
+    <style name="widget_title_white_small_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <!-- 常规黑色字体12 -->
+    <style name="TextViewBaseMain12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <!-- 常规黑色字体14 -->
+    <style name="TextViewBaseMain14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <!-- 常规黑色字体15 -->
+    <style name="TextViewBaseMain15">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <!-- 常规黑色字体16 -->
+    <style name="TextViewBaseMain16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <!-- 常规黑色字体19 -->
+    <style name="TextViewBaseMain19">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_19</item>
+    </style>
+
+
+    <!--普通纵向条目分割线-->
+    <style name="ViewLineVStyle">
+        <item name="android:layout_width">@dimen/dp_1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorViewLine</item>
+    </style>
+
+    <!--普通横向分割线做权重用-->
+    <style name="ViewHWeight">
+        <item name="android:background">@color/colorViewLine</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+    </style>
+
+    <!-- CustomProgressDialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 常规黑色字体15 -->
+    <!-- 普通EditText风格 -->
+    <style name="EditTextMBaseStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
+        <item name="android:textColor">@color/colorTextAssist</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 红色button风格  textSize 18 -->
+
+    <style name="ReadButtonRadius21dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_42</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_read_raduis21</item>
+    </style>
+
+    <!-- 灰色button风格  textSize 18 -->
+    <style name="GrayButtonRadius21dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_42</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_gray_raduis21</item>
+    </style>
+</resources>
